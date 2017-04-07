@@ -97,10 +97,10 @@ articleView.create = function() {
   newArticle.author = $form.find('input[name="article-author"]').val();
   newArticle.authorURL = $form.find('input[name="author-url"]').val();
   newArticle.category = $form.find('input[name="article-category"]').val();
+  // debugger;
   if ($form.find('input[name="publish"]').is(':checked')) {
     newArticle.publishedOn = new Date();
   }
-// debugger;
   // TODO: Use our interface to the Handblebars template to put this new article into the DOM:
 
   var newArticleHtml = Handlebars.compile($('#article-template').html())(newArticle);
