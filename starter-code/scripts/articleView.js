@@ -83,6 +83,7 @@ articleView.initNewArticlePage = function() {
     articleView.create();
   });
   articleView.setTeasers();
+  $('#articles').html('');
 };
 
 articleView.create = function() {
@@ -111,7 +112,7 @@ articleView.create = function() {
   $('pre code').each();
 
   // TODO: Show our export field, and export the new article as JSON, so it's ready to copy/paste into blogArticles.js:
-
+  $('#article-export-json').val(JSON.stringify(newArticle));
 };
 
 
