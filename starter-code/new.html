@@ -55,24 +55,24 @@
                    5. Article category
                    6. Some way to know if this article is a draft or is published -->
 
-          <form id="new-article-form" name="new-article-form" action="index.html" method="post">
+          <form id="new-article-form" name="new-article-form" action="/articles" method="POST">
             <label for="article-title">Article Title:</label>
-            <input type="text" name="article-title" value="">
+            <input type="text" name="article-title">
             <br />
             <label for="article-body">Article Body:</label>
-            <textarea name="article-body" value="" cols="100" rows="15"></textarea>
+            <textarea name="article-body" cols="100" rows="15"></textarea>
             <br />
             <label for="article-author">Article Author:</label>
-            <input type="text" name="article-author" value="">
+            <input type="text" name="article-author">
             <br />
             <label for="author-url">Author URL:</label>
-            <input type="text" name="author-url" value="">
+            <input type="text" name="author-url">
             <br />
             <label for="article-category">Article Category:</label>
-            <input type="text" name="article-category" value="">
+            <input type="text" name="article-category">
             <br />
             <label for="publish">Publish?</label>
-            <input type="checkbox" name="publish" value="">
+            <input type="checkbox" name="publish">
             <br />
             <button type="submit">Create New Post</button>
           </form>
